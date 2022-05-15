@@ -1,0 +1,42 @@
+#nossas-oracoes .btn-primary {
+  width: 80%;
+}
+
+#nossas-oracoes .btn-primary:hover {
+  width: 75%;
+}
+
+#nossas-oracoes .logo {
+  width: 200px;
+  z-index: 1020;
+}
+
+@media (min-width: 450px) {
+  #nossas-oracoes .logo {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1700px) {
+  #nossas-oracoes .logo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 2100px) {
+  #nossas-oracoes .logo {
+    width: 250px;
+  }
+}
+
+@media (min-width: 2450px) {
+  #nossas-oracoes .logo {
+    width: 300px;
+  }
+}
+
+#nossas-oracoes .title {
+  font-weight: 200;
+  font-style: italic;
+}
+/*# sourceMappingURL=oracoes.css.map */

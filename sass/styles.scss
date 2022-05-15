@@ -1,0 +1,233 @@
+
+$marsalal:#782237;
+$marsala:#6c1d30;
+$marsalad:#591626;
+$amarelo: #CCAD91;
+$branco:#fbfaf9;
+
+:root{
+  --primary:#6c1d30;
+}
+
+/* ELEMENTS*/
+
+
+.fc{
+  top: 0;
+  right: 0;
+  
+    img{
+      width: 150px;
+    }
+  }
+  
+  .fb{
+  bottom: 0;
+  left: 0;
+  
+    img{
+      width: 150px;
+    }
+  }
+  
+  .cc{
+  top: 10px;
+  left: 10px;
+  
+    img{
+      width: 50px;
+    }
+  }
+  
+  .cb{
+  bottom: 10px;
+  right: 10px;
+  
+    img{
+      width: 50px;
+    }
+  }
+  
+  .mc{
+    @media (min-width:1210px) {
+      top: -100px;
+    }
+    @media (min-width:2100px) {
+      bottom: -200px;
+    }
+  
+    img{
+      width: 40vw;
+      mix-blend-mode: multiply;
+  
+      @media (max-width:1440px) {
+        width: 50vw;
+      }
+      @media (max-width:768px) {
+        width: 70vw;
+      }
+      @media (max-width:600px) {
+        width: 80vw;
+      }
+      @media (max-width:450px) {
+        width: 100vw;
+      }
+    }
+  }
+  
+  .mb{
+    bottom: 0;
+    right: 0;
+    @media (min-width:1210px) {
+      bottom: -100px;
+    }
+    @media (min-width:2100px) {
+      bottom: -200px;
+    }
+  
+  
+    img{
+      width: 40vw;
+      mix-blend-mode: multiply;
+  
+      @media (max-width:1440px) {
+        width: 50vw;
+      }
+      @media (max-width:768px) {
+        width: 70vw;
+      }
+      @media (max-width:600px) {
+        width: 80vw;
+      }
+      @media (max-width:450px) {
+        width: 100vw;
+      }
+    }
+  }
+  .elements{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    background-image: url(../images/bg.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: contain;
+    z-index: -1020;
+  }
+
+  
+  /* GERAL */
+
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $branco;
+    color:$marsala;
+    
+    
+  }
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
+}
+*{
+  transition: all 0.5s ease-in-out;
+  border-radius: 0!important;
+}
+
+h1, h2, h3, h4{
+  font-weight: 800;
+}
+
+h5, h6{
+  font-weight: 700;
+}
+a{
+z-index: 1020;
+color: $marsala;
+}
+a:hover{
+  color: $amarelo;
+}
+
+.nav-pills .nav-link.active{
+  background-color: $marsala;
+}
+.nav-pills .nav-link.active:hover{
+  background-color: $marsalad;
+}
+
+
+
+.btn-primary{
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  background-color:$marsala;
+  border:1px solid $marsala;
+  color:$branco;
+}
+.btn-primary:hover{
+  background-color:$marsalad;
+  border:1px solid $marsalad;
+  
+}
+.btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
+box-shadow: 0 0 0 0.2rem $marsalal;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $marsalal;
+  border-color: $marsalal;
+}
+
+.btn-secondary{
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  background-color:transparent;
+  border:2px solid $marsala;
+  color:$marsala;
+}
+.btn-secondary:hover{
+  background-color:$marsala;
+  border:2px solid $marsalad;
+  
+}
+.btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus{
+box-shadow: 0 0 0 0.2rem $amarelo;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: $marsalal;
+  border-color: $marsalal;
+}
+
+.butler{
+  font-family: "Butler Stencil", serif;
+  line-height: 1;
+}
+
+.form-control{
+background-color: transparent;
+max-width: 400px;
+border:2px solid $marsala;
+color:$amarelo;
+font-size: 1.5rem;
+}
+.form-control::placeholder{
+  color: $amarelo;
+  
+}
+.form-control:focus {
+  color: $marsalad;
+  background-color: transparent;
+  border-color: $marsalad;
+  outline: 0;
+  box-shadow: 2px 2px 4px $amarelo;
+}

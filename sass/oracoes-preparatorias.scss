@@ -1,0 +1,95 @@
+
+$marsalal:#782237;
+$marsala:#6c1d30;
+$marsalad:#591626;
+$amarelo:#CCAD91;
+$branco:#fbfaf9;
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translatex(3px);}
+
+  20% { transform: translatex(-3px);}
+
+  50% { transform: translatex(3px); }
+
+  70% { transform: translatex(-3px); }
+
+  100% { transform: translatex(0px); }
+}
+
+
+
+#preparatorias{
+  
+
+  .separador{
+
+    img{
+      width: 20%;
+      max-width: 100px;
+    }
+    hr{
+      width: 30%;
+      border: 0.5px solid $marsala;
+    }
+  }
+
+  .content{
+    margin: 0 5%;
+  }
+
+  .logo-via{
+    padding-top: 2rem!important;
+    width: 80%;
+  }
+
+
+
+  .estacao-senha, .estacao-text{
+    transition: all 0.5s ease-in-out;
+  }
+  .estacao-title{
+    font-weight: 600;
+  }
+  .estacao-data{
+    color: $amarelo;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+  .estacao-pray{
+    width: 75%;
+    margin-left: auto;
+    color: $amarelo;
+  }
+
+
+
+
+
+
+
+
+  .show{
+    animation: show 1s ease-in-out;
+  }
+
+  .shake{
+    animation: shake 1s ease-in-out;
+  }
+  .opacity{
+    opacity: 0.5;
+  }
+
+
+
+}

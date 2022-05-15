@@ -1,0 +1,42 @@
+
+$marsalal:#782237;
+$marsala:#6c1d30;
+$marsalad:#591626;
+$amarelo:#CCAD91;
+$branco:#fbfaf9;
+
+#nossas-oracoes{
+
+  .btn-primary{
+    width: 80%;
+  }
+  .btn-primary:hover{
+    width: 75%;
+  }  
+
+.logo{
+  width: 200px;
+  z-index: 1020;
+
+  @media (min-width:450px) {
+    width: 140px;
+  }
+  @media (min-width:1700px) {
+    width: 200px;
+  }
+  @media (min-width:2100px) {
+    width: 250px;
+  }
+  @media (min-width:2450px) {
+    width: 300px;
+  }
+}
+.title{
+  font-weight: 200;
+  font-style: italic;
+}
+
+
+
+
+}

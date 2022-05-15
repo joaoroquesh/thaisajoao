@@ -1,0 +1,118 @@
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translatex(3px);
+            transform: translatex(3px);
+  }
+  20% {
+    -webkit-transform: translatex(-3px);
+            transform: translatex(-3px);
+  }
+  50% {
+    -webkit-transform: translatex(3px);
+            transform: translatex(3px);
+  }
+  70% {
+    -webkit-transform: translatex(-3px);
+            transform: translatex(-3px);
+  }
+  100% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translatex(3px);
+            transform: translatex(3px);
+  }
+  20% {
+    -webkit-transform: translatex(-3px);
+            transform: translatex(-3px);
+  }
+  50% {
+    -webkit-transform: translatex(3px);
+            transform: translatex(3px);
+  }
+  70% {
+    -webkit-transform: translatex(-3px);
+            transform: translatex(-3px);
+  }
+  100% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+}
+
+#preparatorias .separador img {
+  width: 20%;
+  max-width: 100px;
+}
+
+#preparatorias .separador hr {
+  width: 30%;
+  border: 0.5px solid #6c1d30;
+}
+
+#preparatorias .content {
+  margin: 0 5%;
+}
+
+#preparatorias .logo-via {
+  padding-top: 2rem !important;
+  width: 80%;
+}
+
+#preparatorias .estacao-senha, #preparatorias .estacao-text {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#preparatorias .estacao-title {
+  font-weight: 600;
+}
+
+#preparatorias .estacao-data {
+  color: #CCAD91;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+#preparatorias .estacao-pray {
+  width: 75%;
+  margin-left: auto;
+  color: #CCAD91;
+}
+
+#preparatorias .show {
+  -webkit-animation: show 1s ease-in-out;
+          animation: show 1s ease-in-out;
+}
+
+#preparatorias .shake {
+  -webkit-animation: shake 1s ease-in-out;
+          animation: shake 1s ease-in-out;
+}
+
+#preparatorias .opacity {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=oracoes-preparatorias.css.map */
