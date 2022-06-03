@@ -94,6 +94,7 @@ var texto14 = document.getElementById("texto14");
 
 var libera = document.getElementById("libera");
 var liberado = document.getElementById("liberado");
+var fim = document.getElementById("fim");
 
 function date1(){
     function retirarShake1(){
@@ -314,6 +315,8 @@ function date14(){
         senha14.classList.add("d-none");
         liberado.classList.remove("opacity");
         liberado.removeAttribute("disabled");
+        fim.classList.remove("d-none");
+        
     }else{
         input14.classList.add("shake");
         setTimeout(retirarShake14, 1000); 
