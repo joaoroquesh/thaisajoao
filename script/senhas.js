@@ -92,6 +92,9 @@ var senha14 = document.getElementById("senha14");
 var input14 = document.getElementById("input14");
 var texto14 = document.getElementById("texto14");
 
+var libera = document.getElementById("libera");
+libera
+
 function date1(){
     function retirarShake1(){
         input1.classList.remove("shake");
@@ -121,7 +124,7 @@ function date2(){
         input3.removeAttribute("disabled");
     }else{
         input2.classList.add("shake");
-        setTimeout(retirarShake2, 2000); 
+        setTimeout(retirarShake2, 1000); 
     }
 }
 
@@ -137,7 +140,7 @@ function date3(){
         input4.removeAttribute("disabled");
     }else{
         input3.classList.add("shake");
-        setTimeout(retirarShake3, 3000); 
+        setTimeout(retirarShake3, 1000); 
     }
 }
 
@@ -153,7 +156,7 @@ function date4(){
         input5.removeAttribute("disabled");
     }else{
         input4.classList.add("shake");
-        setTimeout(retirarShake4, 4000); 
+        setTimeout(retirarShake4, 1000); 
     }
 }
 
@@ -169,7 +172,7 @@ function date5(){
         input6.removeAttribute("disabled");
     }else{
         input5.classList.add("shake");
-        setTimeout(retirarShake5, 5000); 
+        setTimeout(retirarShake5, 1000); 
     }
 }
 
@@ -185,7 +188,7 @@ function date6(){
         input7.removeAttribute("disabled");
     }else{
         input6.classList.add("shake");
-        setTimeout(retirarShake6, 6000); 
+        setTimeout(retirarShake6, 1000); 
     }
 }
 
@@ -201,7 +204,7 @@ function date7(){
         input8.removeAttribute("disabled");
     }else{
         input7.classList.add("shake");
-        setTimeout(retirarShake7, 7000); 
+        setTimeout(retirarShake7, 1000); 
     }
 }
 
@@ -217,7 +220,7 @@ function date8(){
         input9.removeAttribute("disabled");
     }else{
         input8.classList.add("shake");
-        setTimeout(retirarShake8, 8000); 
+        setTimeout(retirarShake8, 1000); 
     }
 }
 
@@ -233,7 +236,7 @@ function date9(){
         input10.removeAttribute("disabled");
     }else{
         input9.classList.add("shake");
-        setTimeout(retirarShake9, 9000); 
+        setTimeout(retirarShake9, 1000); 
     }
 }
 
@@ -249,7 +252,7 @@ function date10(){
         input11.removeAttribute("disabled");
     }else{
         input10.classList.add("shake");
-        setTimeout(retirarShake10, 10000); 
+        setTimeout(retirarShake10, 1000); 
     }
 }
 
@@ -265,7 +268,7 @@ function date11(){
         input12.removeAttribute("disabled");
     }else{
         input11.classList.add("shake");
-        setTimeout(retirarShake11, 11000); 
+        setTimeout(retirarShake11, 1000); 
     }
 }
 
@@ -281,7 +284,7 @@ function date12(){
         input13.removeAttribute("disabled");
     }else{
         input12.classList.add("shake");
-        setTimeout(retirarShake12, 12000); 
+        setTimeout(retirarShake12, 1000); 
     }
 }
 
@@ -297,7 +300,7 @@ function date13(){
         input14.removeAttribute("disabled");
     }else{
         input13.classList.add("shake");
-        setTimeout(retirarShake13, 13000); 
+        setTimeout(retirarShake13, 1000); 
     }
 }
 
@@ -311,6 +314,14 @@ function date14(){
         senha14.classList.add("d-none");
     }else{
         input14.classList.add("shake");
-        setTimeout(retirarShake14, 14000); 
+        setTimeout(retirarShake14, 1000); 
     }
 }
+
+function liberar(){
+
+        libera.classList.remove("d-none");
+
+}
+
+
