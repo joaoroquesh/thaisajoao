@@ -147,6 +147,13 @@ h1, h2, h3, h4{
 h5, h6{
   font-weight: 700;
 }
+
+.title{
+  font-weight: 200;
+  font-style: italic;
+}
+
+
 a{
 z-index: 1020;
 color: $marsala;
@@ -165,7 +172,7 @@ a:hover{
 
 
 .btn-primary{
-  font-size: 1.5rem;
+
   transition: all 0.5s ease-in-out;
   background-color:$marsala;
   border:1px solid $marsala;
