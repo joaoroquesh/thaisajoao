@@ -13,15 +13,6 @@ $branco:#fbfaf9;
 
 /* ELEMENTS*/
 
-
-.fc{
-  top: 0;
-  right: 0;
-  
-    img{
-      width: 150px;
-    }
-  }
   
   .fb{
   bottom: 0;
@@ -31,15 +22,7 @@ $branco:#fbfaf9;
       width: 150px;
     }
   }
-  
-  .cc{
-  top: 10px;
-  left: 10px;
-  
-    img{
-      width: 50px;
-    }
-  }
+
   
   .cb{
   bottom: 10px;
@@ -139,7 +122,6 @@ html{
 }
 *{
   transition: all 0.5s ease-in-out;
-  border-radius: 0!important;
 }
 
 h1, h2, h3, h4{
@@ -156,26 +138,7 @@ h5, h6{
 }
 
 
-a{
-z-index: 1020;
-color: $marsala;
-}
-a:hover{
-  color: $amarelo;
-}
-
-.nav-pills .nav-link.active{
-  background-color: $marsala;
-}
-.nav-pills .nav-link.active:hover{
-  background-color: $marsalad;
-}
-
-
-
 .btn-primary{
-
-
   transition: all 0.5s ease-in-out;
   background-color:$marsala;
   border:1px solid $marsala;
@@ -223,21 +186,36 @@ box-shadow: 0 0 0 0.2rem $amarelo;
   line-height: 1;
 }
 
-.form-control{
-background-color: transparent;
-max-width: 400px;
-border:2px solid $marsala;
-color:$amarelo;
-font-size: 1.5rem;
-}
-.form-control::placeholder{
-  color: $amarelo;
+
+#main{
+
+  .nav-section{
+
   
+  
+    .nav-link{
+      color: $marsala!important;
+    
+      &:hover{
+        color: $marsalad!important;
+      }
+    }
+
+    .dropdown-menu{
+      border-radius: 5px;
+      border: none;
+      background: $marsala;
+
+      .dropdown-item{
+        color: $branco;
+
+        &:hover{
+          background: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+
 }
-.form-control:focus {
-  color: $marsalad;
-  background-color: transparent;
-  border-color: $marsalad;
-  outline: 0;
-  box-shadow: 2px 2px 4px $amarelo;
-}
+

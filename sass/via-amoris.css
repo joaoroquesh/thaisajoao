@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes show {
   from {
     opacity: 0;
@@ -15,53 +14,40 @@
     opacity: 1;
   }
 }
-
 @-webkit-keyframes shake {
   0% {
-    -webkit-transform: translatex(3px);
-            transform: translatex(3px);
+    transform: translatex(3px);
   }
   20% {
-    -webkit-transform: translatex(-3px);
-            transform: translatex(-3px);
+    transform: translatex(-3px);
   }
   50% {
-    -webkit-transform: translatex(3px);
-            transform: translatex(3px);
+    transform: translatex(3px);
   }
   70% {
-    -webkit-transform: translatex(-3px);
-            transform: translatex(-3px);
+    transform: translatex(-3px);
   }
   100% {
-    -webkit-transform: translatex(0px);
-            transform: translatex(0px);
+    transform: translatex(0px);
   }
 }
-
 @keyframes shake {
   0% {
-    -webkit-transform: translatex(3px);
-            transform: translatex(3px);
+    transform: translatex(3px);
   }
   20% {
-    -webkit-transform: translatex(-3px);
-            transform: translatex(-3px);
+    transform: translatex(-3px);
   }
   50% {
-    -webkit-transform: translatex(3px);
-            transform: translatex(3px);
+    transform: translatex(3px);
   }
   70% {
-    -webkit-transform: translatex(-3px);
-            transform: translatex(-3px);
+    transform: translatex(-3px);
   }
   100% {
-    -webkit-transform: translatex(0px);
-            transform: translatex(0px);
+    transform: translatex(0px);
   }
 }
-
 .catedral {
   height: 60vw;
   max-height: 80vh;
@@ -77,53 +63,41 @@
   width: 20%;
   max-width: 100px;
 }
-
 #via-amoris .separador hr {
   width: 30%;
   border: 0.5px solid #6c1d30;
 }
-
 #via-amoris .content {
   margin: 0 5%;
 }
-
 #via-amoris .logo-via {
   padding-top: 2rem !important;
   width: 80%;
 }
-
 #via-amoris .estacao-senha, #via-amoris .estacao-text {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 #via-amoris .estacao-title {
   font-weight: 600;
 }
-
 #via-amoris .estacao-data {
   color: #CCAD91;
   font-weight: 900;
   font-size: 1.3rem;
 }
-
 #via-amoris .estacao-pray {
   width: 75%;
   margin-left: auto;
   color: #CCAD91;
 }
-
 #via-amoris .show {
   -webkit-animation: show 1s ease-in-out;
           animation: show 1s ease-in-out;
 }
-
 #via-amoris .shake {
   -webkit-animation: shake 1s ease-in-out;
           animation: shake 1s ease-in-out;
 }
-
 #via-amoris .opacity {
   opacity: 0.5;
-}
-/*# sourceMappingURL=via-amoris.css.map */
+}/*# sourceMappingURL=via-amoris.css.map */

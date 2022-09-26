@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAUA,AAEE,UAFQ,CAER,SAAS,CAAA;EACP,MAAM,EAAE,GAAG,CAAC,KAAK,CAXZ,OAAO;CAYb",
-    "sources": [
-        "padrinhos.scss"
-    ],
-    "names": [],
-    "file": "padrinhos.css"
-}
+{"version":3,"sources":["padrinhos.scss","padrinhos.css"],"names":[],"mappings":"AAYE;EACE,yBAAA;ACXJ","file":"padrinhos.css"}

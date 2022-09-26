@@ -1,62 +1,46 @@
 #nossas-oracoes .btn-primary {
   width: 80%;
 }
-
 #nossas-oracoes .btn-click {
   font-weight: 600;
   font-size: 1.5rem;
   padding: 10px 30px;
-  -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
-
 #nossas-oracoes .btn-click:hover {
-  -webkit-transform: translateX(2px) translateY(2px);
-          transform: translateX(2px) translateY(2px);
-  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
-
 #nossas-oracoes .btn-click:active {
-  -webkit-transform: translateX(4px) translateY(4px);
-          transform: translateX(4px) translateY(4px);
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(4px) translateY(4px);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
-
 #nossas-oracoes .logo {
   width: 200px;
   z-index: 1020;
 }
-
 @media (min-width: 450px) {
   #nossas-oracoes .logo {
     width: 140px;
   }
 }
-
 @media (min-width: 1700px) {
   #nossas-oracoes .logo {
     width: 200px;
   }
 }
-
 @media (min-width: 2100px) {
   #nossas-oracoes .logo {
     width: 250px;
   }
 }
-
 @media (min-width: 2450px) {
   #nossas-oracoes .logo {
     width: 300px;
   }
 }
-
 #nossas-oracoes .title {
   font-weight: 200;
   font-style: italic;
-}
-/*# sourceMappingURL=oracoes.css.map */
+}/*# sourceMappingURL=oracoes.css.map */
