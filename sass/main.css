@@ -131,10 +131,16 @@ html {
 
 h1, h2, h3, h4 {
   font-weight: 800;
+  margin: 0;
 }
 
 h5, h6 {
   font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0.5rem;
 }
 
 .title {
@@ -188,7 +194,7 @@ h5, h6 {
 }
 
 .butler {
-  font-family: "Butler Stencil", serif;
+  font-family: "Butler Stencil", serif !important;
   line-height: 1;
 }
 
@@ -225,4 +231,33 @@ h5, h6 {
 }
 #main .nav-section .dropdown-menu .dropdown-item:hover {
   background: rgba(0, 0, 0, 0.3);
+}
+#main .bg-down {
+  position: absolute;
+  height: 128px;
+  width: 100vw;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
+}
+#main #frase {
+  height: 128px;
+  margin-top: -126px;
+  position: relative;
+  color: #fbfaf9;
+}
+#main #frase .bg {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
+}
+#main #count {
+  background: #6c1d30;
+  color: #fbfaf9;
+}
+#main #count .plant {
+  max-width: 90px;
+}
+#main #count .faltam {
+  background-image: url(../images/main/faltam.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }/*# sourceMappingURL=main.css.map */
