@@ -261,4 +261,9 @@ p {
   background-position: center;
   background-size: contain;
   padding-bottom: 3.5rem !important;
+}
+#main #content .card {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
