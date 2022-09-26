@@ -191,13 +191,27 @@ box-shadow: 0 0 0 0.2rem $amarelo;
 
   .nav-section{
 
-  
+    .navbar-nav{
+      @media (max-width:992px) {
+        background: $marsala;
+        color: $branco;
+        border-radius: 5px;
+
+      }
+    }
   
     .nav-link{
       color: $marsala!important;
+      @media (max-width:992px) {
+        color: $branco!important;
+      }
     
       &:hover{
         color: $marsalad!important;
+
+        @media (max-width:992px) {
+          color: $amarelo!important;
+        }
       }
     }
 

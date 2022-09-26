@@ -192,11 +192,28 @@ h5, h6 {
   line-height: 1;
 }
 
+@media (max-width: 992px) {
+  #main .nav-section .navbar-nav {
+    background: #6c1d30;
+    color: #fbfaf9;
+    border-radius: 5px;
+  }
+}
 #main .nav-section .nav-link {
   color: #6c1d30 !important;
 }
+@media (max-width: 992px) {
+  #main .nav-section .nav-link {
+    color: #fbfaf9 !important;
+  }
+}
 #main .nav-section .nav-link:hover {
   color: #591626 !important;
+}
+@media (max-width: 992px) {
+  #main .nav-section .nav-link:hover {
+    color: #CCAD91 !important;
+  }
 }
 #main .nav-section .dropdown-menu {
   border-radius: 5px;
