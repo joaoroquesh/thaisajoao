@@ -194,8 +194,17 @@ box-shadow: 0 0 0 0.2rem $amarelo;
 
 #main{
 
-  .nav-section{
-
+  #menu{
+    &.nav-marsala{
+      background: $marsala!important;
+        
+        .nav-link{
+          color: $branco!important;
+          &:hover{
+            color: $amarelo!important;
+          }
+        }
+    }
     .navbar-nav{
       @media (max-width:992px) {
         background: $marsala;
@@ -234,18 +243,21 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       }
     }
   }
-  .bg-down{
-    position:absolute;
-    height: 128px;
-    width: 100vw;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
-  }
+  
+  
   #frase{
     height: 128px;
     margin-top: -126px;
     position: relative;
     color: $branco;
+
+    &.bg-down{
+      //position:absolute;
+      //height: 128px;
+      width: 100vw;
+      //bottom: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
+    }
     .bg{
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
     }
@@ -264,6 +276,13 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       background-size: contain;
       padding-bottom: 3.5rem!important;
     }
+
+    .time{
+      display: flex;
+      .butler{
+        margin: 0 6px 0 12px;
+      }
+    }
     
   }
   #content{
@@ -272,8 +291,23 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       height: 300px;
       border-radius: 10px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+      background-image: url(../images/main/main-desktop.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
     }
   }
 
+}
+
+footer{
+  a{
+    color: $marsala;
+
+    &:hover{
+      color: $amarelo;
+      text-decoration: none;
+    }
+  }
 }
 

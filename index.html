@@ -71,13 +71,14 @@
 
   <section id="main" >
     
-    <section class="nav-section fixed-top" data-aos="fade-up" >
+    <section id="menu" class="nav-section fixed-top" data-aos="fade-up" >
       <div class="container">
         <div class="row py-2 py-md-3">
           <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav id="menuColor" class="navbar navbar-expand-lg navbar-light">
               <a href="" class="navbar-brand" target="_blank">
-                <img src="images/main/logo-site.svg" height="35px" width="auto" class="d-inline-block align-top" alt="">
+                <img id="imgMenu" src="images/main/logo-site.svg" height="35px" width="auto" class=" align-top">
+                <img id="imgMenuDark" src="images/main/logo-site-w.svg" height="35px" width="auto" class="d-none align-top">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -117,9 +118,9 @@
       </div>
     </section>
 
-    <section class="banner position-relative" data-aos="fade-down">
+    <section class="banner" data-aos="fade-down">
       <div class="w-100">
-        <picture class="banner"> 
+        <picture class="img-banner"> 
           <!--
           desktop
           --> 
@@ -134,10 +135,12 @@
           <img class="w-100 " src="images/main/main-mobile.jpg" /> 
         </picture> 
       </div>
+      <!--
       <div class="bg-down"></div>
+      -->
     </section>
 
-    <section id="frase" >
+    <section id="frase" class="bg-down">
       <div class="text-center bg py-4" >
         <div >
           <p data-aos="fade-up">
@@ -161,12 +164,26 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-8 p-5 faltam align-self-center" data-aos="fade-up">
               <p>Faltam</p>
-              <h1 class="butler">180</h1>
+              <h1 id="days" class="butler"></h1>
               <p>dias</p>
             </div>
             <div class="col-sm-2 align-self-center text-right" data-aos="fade-right">
               <img src="images/plant2.svg" class="plant">
             </div>
+         </div>
+         <div class="row py-3 justify-content-center align-items-center flex-column flex-sm-row">
+          <div class="time">
+            <h4 id="hours" class="butler"></h4>
+            <p>horas</p>
+          </div>
+          <div class="time">
+            <h4 id="minutes" class="butler"></h4>
+            <p>minutos</p>
+          </div>
+          <div class="time">
+            <h4 id="seconds" class="butler"></h4>
+            <p>segundos</p>
+          </div>
          </div>
       </div>
     </section>
@@ -225,6 +242,14 @@
       </div>
     </section>
 
+
+    <footer class="text-center py-5">
+      <h6 class="butler">
+        Feito por <a href="https://joaoroquedesign.com/" target="_blank">João Roque</a>
+      </h6>
+      <p class="small">Todos os direitos reservados | 2022</p>
+    </footer>
+
       
   
 
@@ -239,11 +264,13 @@
   <script src="script/popper.js"></script>
   <script src="script/bootstrap.min.js"></script>
   <script src="script/aos.js"></script>
+  <script src="script/main.js"></script>
   <script>
     AOS.init({
       duration: 1500,
     });
   </script>
+
   
 
 </body>
