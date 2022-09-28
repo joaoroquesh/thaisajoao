@@ -206,7 +206,7 @@ box-shadow: 0 0 0 0.2rem $amarelo;
         }
     }
     .navbar-nav{
-      @media (max-width:992px) {
+      @media (max-width:991px) {
         background: $marsala;
         color: $branco;
         border-radius: 5px;
@@ -216,14 +216,14 @@ box-shadow: 0 0 0 0.2rem $amarelo;
   
     .nav-link{
       color: $marsala!important;
-      @media (max-width:992px) {
+      @media (max-width:991px) {
         color: $branco!important;
       }
     
       &:hover{
         color: $marsalad!important;
 
-        @media (max-width:992px) {
+        @media (max-width:991px) {
           color: $amarelo!important;
         }
       }
@@ -243,8 +243,37 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       }
     }
   }
-  
-  
+  .banner{
+    position: relative;
+    
+    .parallax{
+      background-image: url(../images/main/main-desktop.jpg);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 0.01s ease-in-out;
+
+      @media (max-width:991px) {
+        background-image: url(../images/main/main-mobile.jpg);
+      }
+    }
+
+    .img-banner{
+      opacity: 0;
+    }
+
+    .data-space{
+      width: 180px;
+      position: absolute;
+      top: 100px;
+    }
+    .data-img{
+      
+      height: 50px;
+      
+      margin: 0.5rem;
+    }
+  }
   #frase{
     height: 128px;
     margin-top: -126px;

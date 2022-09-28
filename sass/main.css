@@ -207,7 +207,7 @@ p {
 #main #menu.nav-marsala .nav-link:hover {
   color: #CCAD91 !important;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #main #menu .navbar-nav {
     background: #6c1d30;
     color: #fbfaf9;
@@ -217,7 +217,7 @@ p {
 #main #menu .nav-link {
   color: #6c1d30 !important;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #main #menu .nav-link {
     color: #fbfaf9 !important;
   }
@@ -225,7 +225,7 @@ p {
 #main #menu .nav-link:hover {
   color: #591626 !important;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #main #menu .nav-link:hover {
     color: #CCAD91 !important;
   }
@@ -240,6 +240,33 @@ p {
 }
 #main #menu .dropdown-menu .dropdown-item:hover {
   background: rgba(0, 0, 0, 0.3);
+}
+#main .banner {
+  position: relative;
+}
+#main .banner .parallax {
+  background-image: url(../images/main/main-desktop.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.01s ease-in-out;
+}
+@media (max-width: 991px) {
+  #main .banner .parallax {
+    background-image: url(../images/main/main-mobile.jpg);
+  }
+}
+#main .banner .img-banner {
+  opacity: 0;
+}
+#main .banner .data-space {
+  width: 180px;
+  position: absolute;
+  top: 100px;
+}
+#main .banner .data-img {
+  height: 50px;
+  margin: 0.5rem;
 }
 #main #frase {
   height: 128px;

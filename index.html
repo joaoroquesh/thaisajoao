@@ -127,7 +127,16 @@
     </section>
 
     <section class="banner" data-aos="fade-down">
-      <div class="w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class=" ml-3 text-center data-space">
+              <img class="data-img rellax" data-rellax-speed="-6" src="images/main/data.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax w-100" data-zoom="50"> 
         <picture class="img-banner"> 
           <!--
           desktop
@@ -278,8 +287,47 @@
       duration: 1500,
     });
   </script>
+  <script src="https://cdn.rawgit.com/dixonandmoe/rellax/master/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax',{horizontal: false, vertical: true, speed: 1.5});
+  </script>
 
+
+  <script>
+    (function() {
+  // page scroll bind
+  $(window).on('scroll', onScroll);
+  // onScroll();
   
+})();
+
+function log(msg) {
+  $('.log').html(msg); 
+}
+
+function onScroll() {
+  let wst = $(window).scrollTop(),
+       dh = $(document).height(),
+       wh = $(window).height();
+
+  let scrollPercent = (wst / (dh - wh)) * 100;
+  
+  $('.parallax').each((i, e) => {
+    let zoom = $(e).attr('data-zoom');
+    let variant = ((+zoom) * scrollPercent / 100);
+    let bgSize = `${100 + variant}%`;
+    
+    log(bgSize);
+    
+    $(e).css('background-size', bgSize);
+  });
+  
+}
+
+
+  </script>
+
+
 
 </body>
 
