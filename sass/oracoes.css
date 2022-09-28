@@ -43,4 +43,8 @@
 #nossas-oracoes .title {
   font-weight: 200;
   font-style: italic;
+}
+#nossas-oracoes .voltar:hover {
+  margin-left: 10px;
+  text-decoration: none;
 }/*# sourceMappingURL=oracoes.css.map */

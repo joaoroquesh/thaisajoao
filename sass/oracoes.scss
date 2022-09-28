@@ -52,7 +52,13 @@ $branco:#fbfaf9;
   font-style: italic;
 }
 
+.voltar{
 
+  &:hover{
+    margin-left: 10px;
+    text-decoration:none;
+  }
+}
 
 
 }
