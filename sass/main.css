@@ -207,49 +207,50 @@ p {
   line-height: 1;
 }
 
-#main #menu.nav-marsala {
+#menu.nav-marsala {
   background: #6c1d30 !important;
 }
-#main #menu.nav-marsala .nav-link {
+#menu.nav-marsala .nav-link {
   color: #fbfaf9 !important;
 }
-#main #menu.nav-marsala .nav-link:hover {
+#menu.nav-marsala .nav-link:hover {
   color: #CCAD91 !important;
 }
 @media (max-width: 991px) {
-  #main #menu .navbar-nav {
+  #menu .navbar-nav {
     background: #6c1d30;
     color: #fbfaf9;
     border-radius: 5px;
   }
 }
-#main #menu .nav-link {
+#menu .nav-link {
   color: #6c1d30 !important;
 }
 @media (max-width: 991px) {
-  #main #menu .nav-link {
+  #menu .nav-link {
     color: #fbfaf9 !important;
   }
 }
-#main #menu .nav-link:hover {
+#menu .nav-link:hover {
   color: #591626 !important;
 }
 @media (max-width: 991px) {
-  #main #menu .nav-link:hover {
+  #menu .nav-link:hover {
     color: #CCAD91 !important;
   }
 }
-#main #menu .dropdown-menu {
+#menu .dropdown-menu {
   border-radius: 5px;
   border: none;
   background: #6c1d30;
 }
-#main #menu .dropdown-menu .dropdown-item {
+#menu .dropdown-menu .dropdown-item {
   color: #fbfaf9;
 }
-#main #menu .dropdown-menu .dropdown-item:hover {
+#menu .dropdown-menu .dropdown-item:hover {
   background: rgba(0, 0, 0, 0.3);
 }
+
 #main .banner {
   position: relative;
 }

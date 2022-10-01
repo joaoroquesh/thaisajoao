@@ -1,0 +1,14 @@
+:root {
+  --marsala:#6c1d30;
+  --amarelo: #CCAD91;
+  --branco:#fbfaf9;
+}
+
+.space {
+  height: 90px;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=cerimonia.css.map */
