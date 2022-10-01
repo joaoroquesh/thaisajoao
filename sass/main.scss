@@ -160,19 +160,19 @@ box-shadow: 0 0 0 0.2rem $marsalal;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: #fff;
+  color: $branco;
   background-color: $marsalal;
   border-color: $marsalal;
 }
 
 .btn-secondary{
-  font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
   background-color:transparent;
   border:2px solid $marsala;
   color:$marsala;
 }
 .btn-secondary:hover{
+  color: $branco!important;
   background-color:$marsala;
   border:2px solid $marsalad;
   
@@ -182,7 +182,7 @@ box-shadow: 0 0 0 0.2rem $amarelo;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-  color: #fff;
+  color: $branco!important;
   background-color: $marsalal;
   border-color: $marsalal;
 }
@@ -317,7 +317,7 @@ box-shadow: 0 0 0 0.2rem $amarelo;
   #content{
 
     #cerimonia{
-      min-height: 300px;
+      min-height: 350px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
       overflow: hidden;
@@ -360,13 +360,13 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       }
     }
     .card{
-      height: 300px;
+      min-height: 350px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      background:none;
+      background: none;
       overflow: hidden;
 
-      .card-image{
+      .card-img{
         background-position: center;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -382,7 +382,6 @@ box-shadow: 0 0 0 0.2rem $amarelo;
 
         &.igreja{
           background-image: url(../images/main/igreja.jpg);
-          height: 100%;
           width: 50%;
           @media (max-width:767px) {
             width: 100%;
@@ -391,9 +390,8 @@ box-shadow: 0 0 0 0.2rem $amarelo;
           }
         }
       }
-      .card-content{
+      .card-img-overlay{
         padding: 1.5rem;
-        width: 50%;
         @media (max-width:767px) {
           background-size: 110%;
         }
