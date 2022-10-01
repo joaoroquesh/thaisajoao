@@ -149,22 +149,23 @@ p {
   font-style: italic;
 }
 
+.btn {
+  padding: 0.375rem 1.5rem;
+}
+
 .btn-primary {
   transition: all 0.5s ease-in-out;
   background-color: #6c1d30;
   border: 1px solid #6c1d30;
   color: #fbfaf9;
 }
-
 .btn-primary:hover {
   background-color: #591626;
   border: 1px solid #591626;
 }
-
 .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #782237;
 }
-
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
   color: #fbfaf9;
   background-color: #782237;
@@ -177,18 +178,32 @@ p {
   border: 2px solid #6c1d30;
   color: #6c1d30;
 }
-
 .btn-secondary:hover {
   color: #fbfaf9 !important;
   background-color: #6c1d30;
   border: 2px solid #591626;
 }
-
 .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #CCAD91;
 }
-
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  color: #fbfaf9 !important;
+  background-color: #782237;
+  border-color: #782237;
+}
+.btn-secondary.light {
+  border: 2px solid #fbfaf9;
+  color: #fbfaf9;
+}
+.btn-secondary.light:hover {
+  color: #fbfaf9 !important;
+  background-color: #6c1d30;
+  border: 2px solid #591626;
+}
+.btn-secondary.light:focus, .btn-secondary.light:not(:disabled):not(.disabled).active:focus, .btn-secondary.light:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #CCAD91;
+}
+.btn-secondary.light:not(:disabled):not(.disabled).active, .btn-secondary.light:not(:disabled):not(.disabled):active, .show > .btn-secondary.light.dropdown-toggle {
   color: #fbfaf9 !important;
   background-color: #782237;
   border-color: #782237;
@@ -303,6 +318,9 @@ p {
 #main #count .time .butler {
   margin: 0 6px 0 12px;
 }
+#main #content .card-btn {
+  margin-top: 0.75rem;
+}
 #main #content #cerimonia {
   min-height: 350px;
   border-radius: 10px;
@@ -341,9 +359,13 @@ p {
 #main #content #cerimonia .card-content {
   padding: 1.5rem;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   #main #content #cerimonia .card-content {
+    width: 100%;
     background-size: 110%;
   }
 }
@@ -353,50 +375,45 @@ p {
   margin-bottom: 8px;
 }
 #main #content .card {
+  color: #fbfaf9;
   min-height: 350px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  background: none;
   overflow: hidden;
-}
-#main #content .card .card-img {
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
-  #main #content .card .card-img {
+  #main #content .card {
     background-size: 100%;
   }
 }
-#main #content .card .card-img:hover {
+#main #content .card:hover {
   background-size: auto 110%;
 }
 @media (max-width: 767px) {
-  #main #content .card .card-img:hover {
+  #main #content .card:hover {
     background-size: 110%;
   }
 }
-#main #content .card .card-img.igreja {
+#main #content .card.lista {
   background-image: url(../images/main/igreja.jpg);
-  width: 50%;
 }
-@media (max-width: 767px) {
-  #main #content .card .card-img.igreja {
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-  }
+#main #content .card.historia {
+  background-image: url(../images/main/igreja.jpg);
 }
-#main #content .card .card-img-overlay {
+#main #content .card .card-content {
+  min-height: 350px;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  background: linear-gradient(0deg, rgba(108, 29, 48, 0.5) 0%, rgba(108, 29, 48, 0) 50%, rgba(108, 29, 48, 0.5) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
-@media (max-width: 767px) {
-  #main #content .card .card-img-overlay {
-    background-size: 110%;
-  }
-}
-#main #content .card .card-img-overlay .tag {
+#main #content .card .card-content .tag {
   text-transform: uppercase;
   font-weight: 200;
   margin-bottom: 8px;

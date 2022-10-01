@@ -143,26 +143,28 @@ p{
   font-style: italic;
 }
 
-
+.btn{
+  padding: 0.375rem 1.5rem;
+}
 .btn-primary{
   transition: all 0.5s ease-in-out;
   background-color:$marsala;
   border:1px solid $marsala;
   color:$branco;
-}
-.btn-primary:hover{
-  background-color:$marsalad;
-  border:1px solid $marsalad;
+  &:hover{
+    background-color:$marsalad;
+    border:1px solid $marsalad;
+    
+  }
+  &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+  box-shadow: 0 0 0 0.2rem $marsalal;
+  }
   
-}
-.btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
-box-shadow: 0 0 0 0.2rem $marsalal;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: $branco;
-  background-color: $marsalal;
-  border-color: $marsalal;
+  &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+    color: $branco;
+    background-color: $marsalal;
+    border-color: $marsalal;
+  }
 }
 
 .btn-secondary{
@@ -170,21 +172,41 @@ box-shadow: 0 0 0 0.2rem $marsalal;
   background-color:transparent;
   border:2px solid $marsala;
   color:$marsala;
-}
-.btn-secondary:hover{
-  color: $branco!important;
-  background-color:$marsala;
-  border:2px solid $marsalad;
+  &:hover{
+    color: $branco!important;
+    background-color:$marsala;
+    border:2px solid $marsalad;
+    
+  }
+  &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+  box-shadow: 0 0 0 0.2rem $amarelo;
+  }
   
-}
-.btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus{
-box-shadow: 0 0 0 0.2rem $amarelo;
-}
+  &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+    color: $branco!important;
+    background-color: $marsalal;
+    border-color: $marsalal;
+  }
 
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-  color: $branco!important;
-  background-color: $marsalal;
-  border-color: $marsalal;
+  &.light{
+    border:2px solid $branco;
+    color:$branco;
+    &:hover{
+      color: $branco!important;
+      background-color:$marsala;
+      border:2px solid $marsalad;
+      
+    }
+    &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0.2rem $amarelo;
+    }
+    
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+      color: $branco!important;
+      background-color: $marsalal;
+      border-color: $marsalal;
+    }
+  }
 }
 
 .butler{
@@ -315,7 +337,9 @@ box-shadow: 0 0 0 0.2rem $amarelo;
     
   }
   #content{
-
+    .card-btn{
+      margin-top: 0.75rem;
+    }
     #cerimonia{
       min-height: 350px;
       border-radius: 10px;
@@ -349,7 +373,11 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       .card-content{
         padding: 1.5rem;
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @media (max-width:767px) {
+          width: 100%;
           background-size: 110%;
         }
         .tag{
@@ -360,16 +388,15 @@ box-shadow: 0 0 0 0.2rem $amarelo;
       }
     }
     .card{
+      color: $branco;
       min-height: 350px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      background: none;
       overflow: hidden;
+      background-position: center;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
 
-      .card-img{
-        background-position: center;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
         @media (max-width:767px) {
           background-size: 100%;
         }
@@ -380,21 +407,25 @@ box-shadow: 0 0 0 0.2rem $amarelo;
           }
         }
 
-        &.igreja{
-          background-image: url(../images/main/igreja.jpg);
-          width: 50%;
-          @media (max-width:767px) {
-            width: 100%;
-            height: auto;
-            min-height: 300px;
-          }
+        &.lista{
+          background-image: url(../images/main/igreja.jpg); 
         }
-      }
-      .card-img-overlay{
+        &.historia{
+          background-image: url(../images/main/igreja.jpg); 
+        }
+      
+      .card-content{
+        min-height: 350px;
         padding: 1.5rem;
-        @media (max-width:767px) {
-          background-size: 110%;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: transparent;
+        
+        background: linear-gradient(0deg, rgba(108,29,48,.5) 0%, rgba(108,29,48,0) 50%, rgba(108,29,48,.5) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%);
+        //background: linear-gradient(0deg, rgba(251,250,249,.5) 0%, rgba(251,250,249,0) 50%, rgba(251,250,249,.5) 100%);
+        
         .tag{
           text-transform: uppercase;
           font-weight: 200;
