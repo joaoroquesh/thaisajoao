@@ -155,6 +155,9 @@ p {
 .btn:active {
   transform: translate(3px, 3px);
 }
+.btn:hover {
+  cursor: pointer;
+}
 
 .btn-primary {
   transition: all 0.5s ease-in-out;
@@ -379,9 +382,21 @@ p {
   background-size: auto 110%;
 }
 #main #content .card.lista {
-  background-image: url(../images/main/breve.png);
+  background-image: url(../images/main/lista.jpg);
 }
 #main #content .card.historia {
+  background-image: url(../images/main/breve.png);
+}
+#main #content .card.romantico {
+  background-image: url(../images/main/breve.png);
+}
+#main #content .card.padrinhos {
+  background-image: url(../images/main/breve.png);
+}
+#main #content .card.dress {
+  background-image: url(../images/main/breve.png);
+}
+#main #content .card.pedido {
   background-image: url(../images/main/breve.png);
 }
 #main #content .card .card-content {

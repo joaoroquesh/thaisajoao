@@ -148,6 +148,9 @@ p{
   &:active{
     transform: translate(3px,3px);
   }
+  &:hover{
+    cursor: pointer;
+  }
 }
 .btn-primary{
   transition: all 0.5s ease-in-out;
@@ -393,9 +396,21 @@ p{
         }
 
         &.lista{
-          background-image: url(../images/main/breve.png); 
+          background-image: url(../images/main/lista.jpg); 
         }
         &.historia{
+          background-image: url(../images/main/breve.png); 
+        }
+        &.romantico{
+          background-image: url(../images/main/breve.png); 
+        }
+        &.padrinhos{
+          background-image: url(../images/main/breve.png); 
+        }
+        &.dress{
+          background-image: url(../images/main/breve.png); 
+        }
+        &.pedido{
           background-image: url(../images/main/breve.png); 
         }
       
