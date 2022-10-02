@@ -207,6 +207,20 @@ p {
   line-height: 1;
 }
 
+.tag {
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
 #menu.nav-marsala {
   background: #6c1d30 !important;
 }
@@ -417,11 +431,6 @@ p {
 #main #content .card .card-content.breve .light {
   border: 2px solid #6c1d30;
   color: #6c1d30;
-}
-#main #content .card .card-content .tag {
-  text-transform: uppercase;
-  font-weight: 200;
-  margin-bottom: 8px;
 }
 
 footer a {

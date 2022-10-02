@@ -205,6 +205,19 @@ p{
   line-height: 1;
 }
 
+.tag{
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.radius-10{
+  border-radius: 10px;
+}
+.radius-5{
+  border-radius: 5px;
+}
+
 #menu{
   &.nav-marsala{
     background: $marsala!important;
@@ -435,11 +448,7 @@ p{
             
           }
         }
-        .tag{
-          text-transform: uppercase;
-          font-weight: 200;
-          margin-bottom: 8px;
-        }
+        
       }
     }
   }
