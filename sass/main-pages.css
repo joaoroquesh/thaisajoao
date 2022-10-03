@@ -4,6 +4,10 @@
   --branco:#fbfaf9;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .space {
   height: 90px;
 }
