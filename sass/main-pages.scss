@@ -12,7 +12,23 @@ $branco:#fbfaf9;
 }
 
 
+.space{
+  height: 90px;
+}
 
+.sticky-top{
+  top: 115px!important;
+}
+
+#padrinhosPage{
+
+  hr{
+    border-top: 1px solid $marsala;
+  }
+  .nome{
+    margin-bottom: .5rem;
+  }
+}
 
 
 
