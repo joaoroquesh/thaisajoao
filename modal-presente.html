@@ -1,0 +1,58 @@
+
+
+    <div class="modal fade" id="modalPresentes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Como Presentear</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalPix" >Chave PIX</a>
+            <a type="button" class="btn btn-secondary" href="https://site.lejour.com.br/thaisaejoao" target="_blank">Lista de Presentes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Chave Pix</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/main/qrcode.jpg" class="img-fluid w-50 d-none d-sm-inline">
+            <p class="my-3 " id="texto">joaopedroethaisa@gmail.com</p>
+          </div>
+          <!--
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" id="copiar">Copiar</a>
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let btn = document.querySelector('#copiar');
+
+      btn.addEventListener('click', function(e) {
+      
+      let textArea = document.querySelector('#texto');
+      textArea[0].select();
+      document.execCommand('copy');
+      alert("Copiou");
+      
+  
+});
+
+  </script>
+
+   

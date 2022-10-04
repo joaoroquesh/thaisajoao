@@ -246,7 +246,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="https://site.lejour.com.br/thaisaejoao" target="_blank">
+                  <a class="btn btn-secondary light" data-toggle="modal" data-target="#modalPresentes">
                     Presentear
                   </a>
                 </div>
@@ -377,7 +377,7 @@
   </section>
 
 </section>
-
+<div id="modal"></div>
   <script src="script/jquery.3.5.1.js"></script>
   <script src="script/popper.js"></script>
   <script src="script/bootstrap.min.js"></script>
@@ -430,6 +430,7 @@ function onScroll() {
 
   <script>
     $("#navbarNav").load("menu.html");
+    $("#modal").load("modal-presente.html");
   </script>
 
 

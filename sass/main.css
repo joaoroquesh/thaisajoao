@@ -223,6 +223,14 @@ p {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.modal .close {
+  color: #6c1d30;
+  opacity: 0.7;
+}
+.modal .close:not(:disabled):not(.disabled):focus, .modal .close:not(:disabled):not(.disabled):hover {
+  opacity: 1;
+}
+
 #menu.nav-marsala {
   background: #6c1d30 !important;
 }
@@ -249,6 +257,7 @@ p {
 }
 #menu .nav-link:hover {
   color: #591626 !important;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   #menu .nav-link:hover {

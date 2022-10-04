@@ -220,6 +220,18 @@ p{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.modal{
+
+  .close{
+    color:$marsala;
+    opacity: .7;
+
+    &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):hover {
+      opacity: 1;
+  }
+  }
+}
+
 #menu{
   &.nav-marsala{
     background: $marsala!important;
@@ -248,6 +260,7 @@ p{
   
     &:hover{
       color: $marsalad!important;
+      cursor: pointer;
 
       @media (max-width:991px) {
         color: $amarelo!important;
