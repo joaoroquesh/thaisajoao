@@ -166,8 +166,9 @@ p {
   color: #fbfaf9;
 }
 .btn-primary:hover {
-  background-color: #591626;
-  border: 1px solid #591626;
+  background-color: #CCAD91;
+  border: 1px solid #CCAD91;
+  color: #6c1d30;
 }
 .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #782237;

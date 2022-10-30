@@ -157,9 +157,9 @@ p{
   border:1px solid $marsala;
   color:$branco;
   &:hover{
-    background-color:$marsalad;
-    border:1px solid $marsalad;
-    
+    background-color:$amarelo;
+    border:1px solid $amarelo;
+    color:$marsala;
   }
   &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
   box-shadow: 0 0 0 0.2rem $marsalal;
