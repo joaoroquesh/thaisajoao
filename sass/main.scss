@@ -124,6 +124,10 @@ html{
   box-sizing: border-box;
 }
 
+hr{
+  border-top: 1px solid var(--marsala);
+}
+
 h1, h2, h3, h4{
   font-weight: 800;
   margin: 0;
