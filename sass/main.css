@@ -307,11 +307,16 @@ p {
 .banner .data-space {
   width: 180px;
   position: absolute;
-  top: 75px;
+  top: 90px;
+}
+@media (max-width: 425px) {
+  .banner .data-space {
+    top: 50px;
+  }
 }
 .banner .data-img {
   transition: 0.75s ease-in-out;
-  height: 50px;
+  height: 60px;
   margin: 0.5rem;
 }
 
@@ -485,6 +490,7 @@ footer a:hover {
   right: 10px;
   top: 5px;
   font-size: 1.75rem;
+  z-index: 9;
 }
 #modalVideo .modal-content .modal-body video {
   height: 90vh;
