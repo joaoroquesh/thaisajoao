@@ -458,4 +458,20 @@ footer a {
 footer a:hover {
   color: #CCAD91;
   text-decoration: none;
+}
+
+#modalVideo .modal-content {
+  background: none;
+  border: none;
+}
+#modalVideo .modal-content .modal-header {
+  border: none;
+  padding: 0;
+}
+#modalVideo .modal-content .modal-body {
+  padding: 0;
+}
+#modalVideo .modal-content .modal-body video {
+  height: 90vh;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
