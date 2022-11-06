@@ -134,6 +134,11 @@ hr {
   border-top: 1px solid var(--marsala);
 }
 
+button:focus {
+  outline: 0;
+  transform: scale(1.1);
+}
+
 h1, h2, h3, h4 {
   font-weight: 800;
   margin: 0;
@@ -463,6 +468,7 @@ footer a:hover {
 #modalVideo .modal-content {
   background: none;
   border: none;
+  align-items: center;
 }
 #modalVideo .modal-content .modal-header {
   border: none;
@@ -470,6 +476,15 @@ footer a:hover {
 }
 #modalVideo .modal-content .modal-body {
   padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#modalVideo .modal-content .modal-body button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 1.75rem;
 }
 #modalVideo .modal-content .modal-body video {
   height: 90vh;
