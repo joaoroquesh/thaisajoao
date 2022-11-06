@@ -277,10 +277,10 @@ p {
   background: rgba(0, 0, 0, 0.3);
 }
 
-#main .banner {
+.banner {
   position: relative;
 }
-#main .banner .parallax {
+.banner .parallax {
   background-image: url(../images/main/main-desktop.jpg);
   background-size: 100%;
   background-position: center;
@@ -288,95 +288,98 @@ p {
   transition: 0.01s ease-in-out;
 }
 @media (max-width: 991px) {
-  #main .banner .parallax {
+  .banner .parallax {
     background-image: url(../images/main/main-mobile.jpg);
   }
 }
-#main .banner .img-banner {
+.banner .img-banner {
   opacity: 0;
 }
-#main .banner .data-space {
+.banner .data-space {
   width: 180px;
   position: absolute;
   top: 75px;
 }
-#main .banner .data-img {
+.banner .data-img {
   transition: 0.75s ease-in-out;
   height: 50px;
   margin: 0.5rem;
 }
-#main #frase {
+
+#frase {
   height: 128px;
   margin-top: -126px;
   position: relative;
   color: #fbfaf9;
 }
-#main #frase.bg-down {
+#frase.bg-down {
   width: 100vw;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
 }
-#main #frase .bg {
+#frase .bg {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #6C1D30 96.94%);
 }
-#main #count {
+
+#count {
   background: #6c1d30;
   color: #fbfaf9;
 }
-#main #count .plant {
+#count .plant {
   max-width: 90px;
 }
-#main #count .faltam {
+#count .faltam {
   background-image: url(../images/main/faltam.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   padding-bottom: 3.5rem !important;
 }
-#main #count .time {
+#count .time {
   display: flex;
 }
-#main #count .time .butler {
+#count .time .butler {
   margin: 0 6px 0 12px;
 }
-#main #content .card-btn {
+
+#content .card-btn {
   margin-top: 0.75rem;
 }
-#main #content #cerimonia {
+#content #cerimonia {
   min-height: 350px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-#main #content #cerimonia .card-image {
+#content #cerimonia .card-image {
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
-  #main #content #cerimonia .card-image {
+  #content #cerimonia .card-image {
     background-size: 100%;
   }
 }
-#main #content #cerimonia .card-image:hover {
+#content #cerimonia .card-image:hover {
   background-size: auto 110%;
 }
 @media (max-width: 767px) {
-  #main #content #cerimonia .card-image:hover {
+  #content #cerimonia .card-image:hover {
     background-size: 110%;
   }
 }
-#main #content #cerimonia .card-image.igreja {
+#content #cerimonia .card-image.igreja {
   background-image: url(../images/main/igreja.jpg);
   width: 50%;
 }
 @media (max-width: 767px) {
-  #main #content #cerimonia .card-image.igreja {
+  #content #cerimonia .card-image.igreja {
     width: 100%;
     height: auto;
     min-height: 300px;
   }
 }
-#main #content #cerimonia .card-content {
+#content #cerimonia .card-content {
   padding: 1.5rem;
   width: 50%;
   display: flex;
@@ -384,17 +387,17 @@ p {
   justify-content: space-between;
 }
 @media (max-width: 767px) {
-  #main #content #cerimonia .card-content {
+  #content #cerimonia .card-content {
     width: 100%;
     background-size: 110%;
   }
 }
-#main #content #cerimonia .card-content .tag {
+#content #cerimonia .card-content .tag {
   text-transform: uppercase;
   font-weight: 200;
   margin-bottom: 8px;
 }
-#main #content .card {
+#content .card {
   color: #fbfaf9;
   min-height: 350px;
   border-radius: 10px;
@@ -405,28 +408,28 @@ p {
   background-repeat: no-repeat;
   background-color: transparent;
 }
-#main #content .card:hover {
+#content .card:hover {
   background-size: auto 110%;
 }
-#main #content .card.lista {
+#content .card.lista {
   background-image: url(../images/main/lista.jpg);
 }
-#main #content .card.historia {
-  background-image: url(../images/main/breve.png);
+#content .card.historia {
+  background-image: url(../images/main/historia.jpg);
 }
-#main #content .card.romantico {
-  background-image: url(../images/main/breve.png);
+#content .card.romantico {
+  background-image: url(../images/main/ensaio.jpg);
 }
-#main #content .card.padrinhos {
+#content .card.padrinhos {
   background-image: url(../images/main/padrinhos.jpg);
 }
-#main #content .card.dress {
+#content .card.dress {
   background-image: url(../images/main/dress.jpg);
 }
-#main #content .card.pedido {
-  background-image: url(../images/main/breve.png);
+#content .card.pedido {
+  background-image: url(../images/main/pedido.jpg);
 }
-#main #content .card .card-content {
+#content .card .card-content {
   min-height: 350px;
   padding: 1.5rem;
   display: flex;
@@ -436,11 +439,11 @@ p {
   background: linear-gradient(0deg, rgba(108, 29, 48, 0.5) 0%, rgba(108, 29, 48, 0) 50%, rgba(108, 29, 48, 0.5) 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
-#main #content .card .card-content.breve {
+#content .card .card-content.breve {
   background: none;
   color: #6c1d30;
 }
-#main #content .card .card-content.breve .light {
+#content .card .card-content.breve .light {
   border: 2px solid #6c1d30;
   color: #6c1d30;
 }

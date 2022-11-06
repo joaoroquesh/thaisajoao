@@ -21,4 +21,29 @@ body {
 }
 #padrinhosPage .nome {
   margin-bottom: 0.5rem;
+}
+
+#Fotos .card {
+  color: #fbfaf9;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+@media (max-width: 425px) {
+  #Fotos .card {
+    height: 130px;
+  }
+}
+#Fotos .card img:hover {
+  transform: scale(1.1);
+}
+#Fotos .card img.width {
+  width: 100%;
+}
+#Fotos .card img.height {
+  height: 100%;
 }/*# sourceMappingURL=main-pages.css.map */

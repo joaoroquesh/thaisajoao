@@ -32,5 +32,43 @@ body{
   }
 }
 
+#Fotos{
+  .card{
+    color: $branco;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    @media (max-width:425px) {
+      height:130px
+    }
+      
+    img{
+      
+
+      &:hover{
+       transform: scale(1.1);
+        
+      }
+      &.width{
+        width: 100%;
+      }
+      &.height{
+        height: 100%;
+      }
+    }
+
+      
+    
+    
+  }
+}
+
+
+
 
 
