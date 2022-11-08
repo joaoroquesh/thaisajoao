@@ -500,4 +500,28 @@ footer a:hover {
 
 .modal-video-close-btn {
   top: -20px !important;
+}
+#text-pix {
+  display: flex;
+  justify-content: center;
+  border: 0px;
+  background: none;
+  resize: none;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  color: #6c1d30;
+}
+
+.copy-code i {
+  display: none;
+}
+.copy-code.success {
+  background-color: #CCAD91;
+  border: 2px solid #CCAD91 !important;
+  color: #fbfaf9 !important;
+  transition: all 0.25s ease-in-out;
+}
+.copy-code.success i {
+  display: inline;
 }/*# sourceMappingURL=main.css.map */

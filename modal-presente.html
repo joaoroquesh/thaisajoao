@@ -29,49 +29,44 @@
           </div>
           <div class="modal-body text-center">
             <img src="images/main/qrcode.jpg" class="img-fluid w-50 d-none d-sm-inline">
-            <p class="my-3 " id="texto">joaopedroethaisa@gmail.com</p>
+            <textarea class="my-3 " id="text-pix" disabled>joaopedroethaisa@gmail.com</textarea>
           </div>
-          <!--
+          
           <div class="modal-footer">
-            <a type="button" class="btn btn-secondary" id="copiar">Copiar</a>
+            <a type="button" class="btn btn-secondary copy-code" id="copiar" onclick="copyHTML()"><i class="fas fa-check"></i>  Copiar PIX</a>
           </div>
-          -->
+          
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" onclick="autoplayFalse()">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          
-          <div class="modal-body text-center">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <video controls loop>
-              <source src="images/ensaio.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
+  
 
     
     
     
 
     <script>
-      let btn = document.querySelector('#copiar');
+      /* -- BTN Copiar código HTML -- */
+      /* -- BTN Copiar código -- */
+      function copyHtmlSuccess() {
+          var textoSucesso = document.querySelector('.copy-code');
+          textoSucesso.classList.toggle('success');
+      };
+      function copyHTML() {
+          /* Capturar campo texto em variável */
+          var copyText = document.getElementById("text-pix");
+        
+          /* Selecionar campo texto */
+          copyText.select();
+          copyText.setSelectionRange(0, 999999); /* For mobile devices */
+        
+          /* Copiar para clipboard */
+          navigator.clipboard.writeText(copyText.value);
 
-      btn.addEventListener('click', function(e) {
-      
-      let textArea = document.querySelector('#texto');
-      textArea[0].select();
-      document.execCommand('copy');
-      alert("Copiou");
-      
-  
-});
+          copyHtmlSuccess();
+          setTimeout(copyHtmlSuccess, 3000);
+      };
 
   </script>
 

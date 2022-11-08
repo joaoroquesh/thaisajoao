@@ -522,3 +522,32 @@ footer{
     
   }
 }
+
+#text-pix{
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    background: none;
+    resize: none;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    color: $marsala;
+}
+.copy-code{
+
+  i{
+    display: none;
+  }
+  &.success{
+  background-color: $amarelo;
+  border:2px solid $amarelo!important;
+  color: $branco!important;
+  transition: all 0.25s ease-in-out;
+  
+  i{
+    display: inline;
+  }
+  }
+}
+
