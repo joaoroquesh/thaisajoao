@@ -1,8 +1,9 @@
-
+<link rel="stylesheet" href="css/modal-video.min.css">
 
     <ul class="navbar-nav align-items-center justify-content-end w-100">
         <li class="nav-item active mx-3">
-          <a class="nav-link" data-toggle="modal" data-target="#modalVideo" onclick="autoplayTrue()">Nosso vídeo</a>
+          <!--<a class="nav-link js-modal-btn" data-video-id="768527178">Nosso vídeo</a>-->
+          <a class="nav-link js-modal-btn" data-channel="custom">Nosso vídeo</a>
         </li>
 
         <li class="nav-item active mx-3">
@@ -27,3 +28,12 @@
 
       </ul>
 
+      <script src="script/jquery-modal-video.min.js"></script>
+      <script src="script/modal-video.min.js"></script>
+      <script>
+        /*
+        $(".js-modal-btn").modalVideo({channel:'vimeo'});
+        */
+          $(".js-modal-btn").modalVideo({url:'/images/ensaio.mp4'});
+        
+      </script>

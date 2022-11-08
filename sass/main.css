@@ -110,8 +110,13 @@
 /* GERAL */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fbfaf9;
+  background-color: transparent;
   color: #6c1d30;
+  margin: 0px;
+}
+
+.tr {
+  background-color: transparent !important;
 }
 
 html {
@@ -233,14 +238,19 @@ p {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.modal .close {
-  color: #6c1d30;
-  opacity: 0.7;
-}
-.modal .close:not(:disabled):not(.disabled):focus, .modal .close:not(:disabled):not(.disabled):hover {
-  opacity: 1;
-}
+/*
+.modal{
 
+  .close{
+    color:$marsala;
+    opacity: .7;
+
+    &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):hover {
+      opacity: 1;
+  }
+  }
+}
+*/
 #menu.nav-marsala {
   background: #6c1d30 !important;
 }
@@ -312,12 +322,20 @@ p {
 @media (max-width: 425px) {
   .banner .data-space {
     top: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .banner .data-img {
   transition: 0.75s ease-in-out;
   height: 60px;
   margin: 0.5rem;
+}
+@media (max-width: 370px) {
+  .banner .data-img {
+    height: 50px;
+  }
 }
 
 #frase {
@@ -470,29 +488,16 @@ footer a:hover {
   text-decoration: none;
 }
 
-#modalVideo .modal-content {
-  background: none;
-  border: none;
-  align-items: center;
+.modal-video-movie-wrap {
+  height: 90% !important;
+  background: transparent !important;
 }
-#modalVideo .modal-content .modal-header {
-  border: none;
-  padding: 0;
+@media (orientation: landscape) {
+  .modal-video-movie-wrap {
+    width: 50% !important;
+  }
 }
-#modalVideo .modal-content .modal-body {
-  padding: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#modalVideo .modal-content .modal-body button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 1.75rem;
-  z-index: 9;
-}
-#modalVideo .modal-content .modal-body video {
-  height: 90vh;
-  border-radius: 10px;
+
+.modal-video-close-btn {
+  top: -20px !important;
 }/*# sourceMappingURL=main.css.map */
