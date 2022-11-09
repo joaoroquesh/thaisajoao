@@ -5,14 +5,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Como Presentear</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close click-modal click-closePresentear" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           
           <div class="modal-footer">
-            <a type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalPix" onclick="return gtag_report_conversion('Modal-pix');">Chave PIX</a>
-            <a type="button" class="btn btn-secondary" href="https://site.lejour.com.br/thaisaejoao" target="_blank" onclick="return gtag_report_conversion('Modal-lista-presentes');">Lista de Presentes</a>
+            <a type="button" class="btn btn-secondary click-modal click-PIX" data-dismiss="modal" data-toggle="modal" data-target="#modalPix" >Chave PIX</a>
+            <a type="button" class="btn btn-secondary click-modal click-lejour" href="https://site.lejour.com.br/thaisaejoao" target="_blank" >Lista de Presentes</a>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Chave Pix</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close click-modal click-closePix" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -33,7 +33,7 @@
           </div>
           
           <div class="modal-footer">
-            <a type="button" class="btn btn-secondary copy-code" id="copiar" onclick="copyHTML()" onclick="return gtag_report_conversion('Modal-copy-pix');"><i class="fas fa-check"></i>  Copiar PIX</a>
+            <a type="button" class="btn btn-secondary copy-code click-modal click-copyPIX" id="copiar" onclick="copyHTML()"><i class="fas fa-check"></i>  Copiar PIX</a>
           </div>
           
         </div>
