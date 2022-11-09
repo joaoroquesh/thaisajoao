@@ -11,8 +11,8 @@
           </div>
           
           <div class="modal-footer">
-            <a type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalPix" >Chave PIX</a>
-            <a type="button" class="btn btn-secondary" href="https://site.lejour.com.br/thaisaejoao" target="_blank">Lista de Presentes</a>
+            <a type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalPix" onclick="return gtag_report_conversion('Modal-pix');">Chave PIX</a>
+            <a type="button" class="btn btn-secondary" href="https://site.lejour.com.br/thaisaejoao" target="_blank" onclick="return gtag_report_conversion('Modal-lista-presentes');">Lista de Presentes</a>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
           </div>
           
           <div class="modal-footer">
-            <a type="button" class="btn btn-secondary copy-code" id="copiar" onclick="copyHTML()"><i class="fas fa-check"></i>  Copiar PIX</a>
+            <a type="button" class="btn btn-secondary copy-code" id="copiar" onclick="copyHTML()" onclick="return gtag_report_conversion('Modal-copy-pix');"><i class="fas fa-check"></i>  Copiar PIX</a>
           </div>
           
         </div>
@@ -42,8 +42,6 @@
 
   
 
-    
-    
     
 
     <script>
@@ -67,6 +65,7 @@
           copyHtmlSuccess();
           setTimeout(copyHtmlSuccess, 3000);
       };
+      
 
   </script>
 

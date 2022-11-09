@@ -53,6 +53,22 @@
 
   gtag('config', 'G-ZTKZ458Q70');
 </script>
+<script>
+  function gtag_report_conversion(url) {
+       var callback = function () {
+       if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'TAG_ID/CONVERSION_LABEL',
+        'value': 1.0,
+        'currency': 'USD',
+       'event_callback': callback
+    });
+  return false;
+  }
+  </script>
 
   <title>Dress Code | Thaísa & João</title>
 </head>
@@ -163,10 +179,7 @@
    
 
     <footer class="text-center py-5">
-      <h6 class="butler">
-        Feito por <a href="https://joaoroquedesign.com/" target="_blank">João Roque</a>
-      </h6>
-      <p class="small">Todos os direitos reservados | 2022</p>
+    
     </footer>
 
 
@@ -227,6 +240,7 @@ function onScroll() {
 <script>
   $("#navbarNav").load("menu.html");
   $("#modal").load("modal-presente.html");
+  $("footer").load("footer.html");
 </script>
 
 

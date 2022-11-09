@@ -45,6 +45,22 @@
 
   gtag('config', 'G-ZTKZ458Q70');
 </script>
+<script>
+  function gtag_report_conversion(url) {
+       var callback = function () {
+       if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'TAG_ID/CONVERSION_LABEL',
+        'value': 1.0,
+        'currency': 'USD',
+       'event_callback': callback
+    });
+  return false;
+  }
+  </script>
 
 <meta property="og:site_name" content="Thaísa & João | 25.03.23">
 <meta property="og:title" content="Thaísa & João | 25.03.23" />
@@ -96,7 +112,7 @@
           <div class="col">
             <nav id="menuColor" class="navbar navbar-expand-lg navbar-light">
               <a href="" class="navbar-brand">
-                <img id="imgMenu" src="images/main/logo-site.svg" height="35px" width="auto" class=" align-top">
+                <img id="imgMenu" src="images/main/logo.svg" height="35px" width="auto" class=" align-top">
                 <img id="imgMenuDark" src="images/main/logo-site-w.svg" height="35px" width="auto" class="d-none align-top">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -226,7 +242,7 @@
                   </div>
 
                   <div class="card-btn text-right">
-                    <a class="btn btn-secondary w-100" href="/cerimonia">
+                    <a class="btn btn-secondary w-100" href="/cerimonia" onclick="return gtag_report_conversion('CardHome-cerimonia');">
                       Ver informações do evento
                     </a>
                   </div>
@@ -252,7 +268,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" data-toggle="modal" data-target="#modalPresentes">
+                  <a class="btn btn-secondary light" data-toggle="modal" data-target="#modalPresentes" onclick="return gtag_report_conversion('CardHome-lista-presentes');">
                     Presentear
                   </a>
                 </div>
@@ -272,7 +288,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/ensaio">
+                  <a class="btn btn-secondary light" href="/ensaio" onclick="return gtag_report_conversion('CardHome-ensaio');">
                     Ver fotos
                   </a>
                 </div>
@@ -295,7 +311,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/pedido">
+                  <a class="btn btn-secondary light" href="/pedido" onclick="return gtag_report_conversion('CardHome-pedido');">
                     Ver fotos
                   </a>
                 </div>
@@ -315,7 +331,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/conheca-padrinhos">
+                  <a class="btn btn-secondary light" href="/conheca-padrinhos" onclick="return gtag_report_conversion('CardHome-padrinhos');">
                     Conhecer
                   </a>
                 </div>
@@ -338,7 +354,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/dresscode">
+                  <a class="btn btn-secondary light" href="/dresscode" onclick="return gtag_report_conversion('CardHome-dresscode');">
                     Ver completo
                   </a>
                 </div>
@@ -358,7 +374,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/historia">
+                  <a class="btn btn-secondary light" href="/historia" onclick="return gtag_report_conversion('CardHome-historia');">
                     Ver fotos
                   </a>
                 </div>
@@ -372,10 +388,7 @@
 
 
     <footer class="text-center py-5">
-      <h6 class="butler">
-        Feito por <a href="https://joaoroquedesign.com/" target="_blank">João Roque</a>
-      </h6>
-      <p class="small">Todos os direitos reservados | 2022</p>
+      
     </footer>
 
 
@@ -438,6 +451,7 @@ function onScroll() {
   <script>
     $("#navbarNav").load("menu.html");
     $("#modal").load("modal-presente.html");
+    $("footer").load("footer.html");
   </script>
 
 

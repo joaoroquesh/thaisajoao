@@ -317,7 +317,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/ensaio">
+                  <a class="btn btn-secondary light" href="/ensaio" onclick="return gtag_report_conversion('Historia-ensaio');">
                     Ver fotos
                   </a>
                 </div>
@@ -337,7 +337,7 @@
                   </h2>
                 </div>
                 <div class="card-btn text-right">
-                  <a class="btn btn-secondary light" href="/pedido">
+                  <a class="btn btn-secondary light" href="/pedido" onclick="return gtag_report_conversion('Historia-pedido');">
                     Ver fotos
                   </a>
                 </div>
@@ -373,10 +373,7 @@
    
 
     <footer class="text-center py-5">
-      <h6 class="butler">
-        Feito por <a href="https://joaoroquedesign.com/" target="_blank">João Roque</a>
-      </h6>
-      <p class="small">Todos os direitos reservados | 2022</p>
+     
     </footer>
 
 
@@ -438,6 +435,7 @@ function onScroll() {
 <script>
   $("#navbarNav").load("menu.html");
   $("#modal").load("modal-presente.html");
+  $("footer").load("footer.html");
 </script>
 
 
