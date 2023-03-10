@@ -8,7 +8,7 @@
         </li>
 
         <li class="nav-item active mx-3">
-          <a class="nav-link click menu-presentes" target="_blank" href="/lista-de-presentes" >Lista de presentes</a>
+          <a class="nav-link click menu-presentes" data-toggle="modal" data-target="#modalPresentes" >Lista de presentes</a>
         </li>
 
         <li class="nav-item active mx-3">
@@ -28,6 +28,46 @@
         </li>
 
       </ul>
+      
+      <div class="modal fade" id="modalPresentes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Como Presentear</h5>
+              <button type="button" class="close click modal-closePresentear" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <div class="modal-footer">
+              <a type="button" class="btn btn-secondary click modal-PIX" data-dismiss="modal" data-toggle="modal" data-target="#modalPix" >Chave PIX</a>
+              <a type="button" class="btn btn-secondary click modal-lejour" href="https://site.lejour.com.br/thaisaejoao" target="_blank" >Lista de Presentes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" id="modalPix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Chave Pix</h5>
+              <button type="button" class="close click modal-closePix" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="images/main/qrcode.jpg" class="img-fluid w-50 d-none d-sm-inline">
+              <textarea class="my-3 " id="text-pix" disabled>joaopedroethaisa@gmail.com</textarea>
+            </div>
+            
+            <div class="modal-footer">
+              <a type="button" class="btn btn-secondary copy-code click modal-copyPIX" id="copiar" onclick="copyHTML()"><i class="fas fa-check"></i>  Copiar PIX</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
       <script src="script/jquery-modal-video.min.js"></script>
       <script src="script/modal-video.min.js"></script>
@@ -36,7 +76,7 @@
         $(".js-modal-btn").modalVideo({channel:'vimeo'});
         */
           $(".js-modal-btn").modalVideo({url:'/images/ensaio.mp4'});
-        
+          
       </script>
 
      
